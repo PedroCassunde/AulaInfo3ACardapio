@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../src/globals.css";
 
 
@@ -89,7 +90,7 @@ export default function App() {
             <td>{produto.item}</td>
             <tb>{produto.preco}</tb>
             <td>
-                <button onClick={()=> removerItem(pedido.id)}>X</button>
+                <button onClick={()=> removerItem(pedido.id)} className="buttonType">X</button>
             </td>
         </tr>
     </table>
