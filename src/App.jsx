@@ -60,11 +60,21 @@ export default function App() {
    const adicionarProdutoPedido = (produto) => {
     setPedidos([...listaPedidos, produto]);
    }
-   console.table(listaPedidos);
+   console.table(listaPedidos);    
 
    const removerItem = (id)=> {
-    let listaAux = listaPedidos.filter((pedido)=> pedido.id !== id);
-    setPedidos(listaAux);
+    let remover = false;
+    let listaAux = listaPedidos.filter((pedido)=>{
+        if(pedido.id == id){
+            if(remover == false){
+                remover = true;
+                return null
+            }
+        }else{
+             return pedido;
+        }
+    });
+    setPedidos(listaAux, remover);
    }
 
     return (
@@ -90,7 +100,7 @@ export default function App() {
             <td>{produto.item}</td>
             <tb>{produto.preco}</tb>
             <td>
-                <button onClick={()=> removerItem(pedido.id)} className="buttonType">X</button>
+                <button onClick={()=> removerItem(produto.id)} className="buttonType">X</button>
             </td>
         </tr>
     </table>
