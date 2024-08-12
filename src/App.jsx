@@ -13,7 +13,7 @@ export default function App() {
 
             imagem: "https://www.assai.com.br/sites/default/files/shutterstock_1806472312.jpg",
 
-            preco: "R$ 25,99"
+            preco: "R$ 125,99"
 
         },
 
@@ -25,7 +25,7 @@ export default function App() {
 
             imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4S15squn95k7qtrVOpMX1MOJGe48y4B7FQ&s",
 
-            preco: "R$ 5,99"
+            preco: "R$ 389,99"
 
         },
 
@@ -33,11 +33,11 @@ export default function App() {
 
             id: 3,
 
-            item: "Batatas fritas",
+            item: "Batata Frita",
 
             imagem: "https://gastronomiacarioca.zonasul.com.br/wp-content/uploads/2023/05/batata_frita_destaque_ilustrativo_zona_sul.jpg",
 
-            preco: "R$ 8,99"
+            preco: "R$ 78,99"
 
         },
 
@@ -45,11 +45,11 @@ export default function App() {
 
             id: 4,
 
-            item: "Suco de Frutas",
+            item: "Suco Natural",
 
             imagem: "https://helenalunardelli.com.br/wp-content/uploads/2013/02/sucos.jpg",
 
-            preco: "R$ 8,99"
+            preco: "R$ 128,99"
 
         },
 
